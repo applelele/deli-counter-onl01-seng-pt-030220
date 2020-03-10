@@ -16,13 +16,12 @@ def take_a_number(katz_deli, new_customer)
   new_customer = gets.chomp
   katz_deli << new_customer
   if katz_deli.length < 1
-    puts "The line is currently empty."
+    puts "Welcome, #{new_customer}. You are number 1 in line."
   else
-    katz_deli.each_with_index do |name, index|
-      puts "Welcome, #{name}. You are number #{index+1} in line."
+      puts "Welcome, #{katz_deli[-1]}. You are number #{katz_deli.index+1} in line."
     end
-  end
 end
+
 
 def now_serving(katz_deli)
   
