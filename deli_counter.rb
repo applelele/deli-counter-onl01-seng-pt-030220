@@ -14,9 +14,10 @@ end
 
 
 def take_a_number(katz_deli, new_customer)
-  new_customer = ""
-  katz_deli = []
-  new_customer = gets.chomp
+  binding.pry
+  # new_customer = ""
+  # katz_deli = []
+  # new_customer = gets.chomp
   katz_deli << new_customer
   if katz_deli.length < 1
     puts "Welcome, #{new_customer}. You are number 1 in line."
