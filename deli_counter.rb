@@ -33,7 +33,7 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     katz_deli.each do |next_customer|
-    next_customer = katz_deli[0]
+    next_customer = katz_deli[1]
     puts "Currently serving #{next_customer}."
     # binding.pry
     katz_deli.shift
