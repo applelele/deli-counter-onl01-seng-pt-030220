@@ -35,7 +35,7 @@ def now_serving(katz_deli)
     katz_deli.each do |next_customer|
     next_customer = katz_deli[0]
     puts "Currently serving #{next_customer}."
-    katz_deli = katz_deli.shift
+    katz_deli.shift
   end
 end
 end
