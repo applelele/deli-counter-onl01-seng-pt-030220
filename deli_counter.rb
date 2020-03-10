@@ -9,7 +9,7 @@ def line(katz_deli)
         message += " #{index+1}. #{name}"
       end
       binding.pry
-      message
+      puts message
     end
 end
 
