@@ -1,4 +1,4 @@
-require "pry"
+# require "pry"
 
 def line(katz_deli)
     if katz_deli.length < 1
@@ -33,7 +33,6 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli[0]}."
-    binding.pry
     katz_deli.shift
     end
   end
